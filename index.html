@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <title>Clark</title>
+    <script src="/script.js"  async defer></script>
+    <title>How to make a Website</title>
 </head>
 
 <body>
@@ -15,68 +16,76 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#skill">Skill</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#myblog">My Blog</a></li>
-                <li><a href="#">Contacts</a></li>
+                <li>
+                    <p class="javascriptButtons" onclick="scrollingToAboutSection('home')">Home</p>
+                </li>
+                <li>
+                    <p class="javascriptButtons" onclick="scrollingToAboutSection('about')">About</p>
+                </li>
+                <li>
+                    <p class="javascriptButtons" onclick="scrollingToAboutSection('resume')">Resume</p>
+                </li>
+                <li>
+                    <p class="javascriptButtons" onclick="scrollingToAboutSection('services')">Services</p>
+                </li>
+                <li>
+                    <p class="javascriptButtons" onclick="scrollingToAboutSection('skill')">Skills</p>
+                </li>
+                <li>
+                    <p class="javascriptButtons" onclick="scrollingToAboutSection('myBlog')">My Blog</p>
+                </li>
+                <li>
+                    <p class="javascriptButtons" onclick="scrollingToAboutSection('contact')">Contact</p>
+                </li>
             </ul>
         </nav>
     </header>
     <div class="first-part">
         <div class="left-first-part">
             <div class="hello">
-                <p class="hi">Hello!</p>
-                <p class="nameDeveloper">I'm Clark Thompson</p>
-                <p class="profesion">A Freelance Web Designer</p>
+                <p class="hi">
+                    Simple and Elegant
+                </p>
+                <p class="nameDeveloper">
+                    Lavish
+                </p>
+                <div class="name" style="opacity: 1;">
+                    UI & UX Specialist
+                    Project Leader
+                    Designer & Developer
+                </div>
+                <div class="loremIpsum">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos est ad labore et
+                    itaque, autem mollitia ullam ut exercitationem voluptate tempora sequi accusamus pariatur hic dolor
+                    recusandae, ex unde quidem?</div>
                 <div class="buttons">
-                    <button class="work">Hire Me</button>
-                    <button class="work">My Works</button>
+                    <div class="button-hire">
+                        <button class="work">Get Started</button>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="right-first-part">
-            <img src="/5.jpeg" alt="">
+            <img class="images-1" src="/img/hello-people.jpeg" alt="">
         </div>
     </div>
 
     <div class="secondSection" id="about">
-        <div class="leftSecondSection">
-            <img width="250px" src="/4.jpeg 08-54-29-905.jpeg" alt="">
-        </div>
-        <div class="rightSecondSection">
-            <div class="title">
-                <p>About Me</p>
-            </div>
-            <div class="information">
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia</p>
-            </div>
-            <div class="important-information">
-                <ul>
-                    <li>
-                        <span>Name:</span> <span>Johnny Wick</span>
-                    </li>
-                    <li>
-                        <span>Date of Birth:</span> <span>December 26, 2009</span>
-                    </li>
-                    <li>
-                        <span>Address:</span> <span>12345 S Oklahoma Ave</span>
-                    </li>
-                    <li>
-                        <span>Zip Code:</span> <span>67901</span>
-                    </li>
-                    <li>
-                        <span>Email:</span> <span>ronicristianteletor@gmail.com</span>
-                    </li>
-                    <li>
-                        <span>Phone Number:</span> <span>1234 5678 9011</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
+            <!-- <div class="rightSecondSection">
+                <div class="title">
+                    <p>What I Do</p>
+                </div>
+                <div class="information">
+                    <p>Web Designing by anonymous</p>
+                </div>
+                <div class="lorem">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum a incidunt provident
+                        voluptates iste accusantium doloribus veritatis expedita aut nemo deleniti rem ipsam architecto
+                        aliquam,
+                        sapiente asperiores quae laboriosam dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatum a incidunt provident voluptates iste accusantium doloribus veritatis expedita aut nemo
+                        deleniti rem ipsam architecto aliquam, sapiente asperiores quae laboriosam dolor.</p>
+                </div>
+            </div> -->
     </div>
     <div class="thirdSection" id="resume">
         <div class="thirdTitle">
@@ -89,15 +98,15 @@
         <div class="firstSectionThirdSection">
             <div class="left">
                 <span class="date">2014-2015</span>
-                <h2>Master Degree of Design</h2>
+                <h2 class="degree">Master Degree of Design</h2>
                 <span class="university">Cambridge University</span>
                 <span class="words">A small river named Duden flows by their place and supplies it with the necessary
                     regelialia. It is a paradisematic country, in which roasted parts of sentences is in our
                     mouth.</span>
             </div>
-            <div class="right">
+            <div class="left">
                 <span class="date">2014-2015</span>
-                <h2>Master Degree of Design</h2>
+                <h2 class="degree">Master Degree of Design</h2>
                 <span class="university">Cambridge University</span>
                 <span class="words">A small river named Duden flows by their place and supplies it with the necessary
                     regelialia. It is a paradisematic country, in which roasted parts of sentences is in our
@@ -105,7 +114,7 @@
             </div>
         </div>
         <div class="secondSectionThirdSection">
-            <div class="riight">
+            <div class="left">
                 <span class="date">2014-2015</span>
                 <h2>Master Degree of Design</h2>
                 <span class="university">Cambridge University</span>
@@ -113,7 +122,7 @@
                     regelialia. It is a paradisematic country, in which roasted parts of sentences is in our
                     mouth.</span>
             </div>
-            <div class="leeft">
+            <div class="left">
                 <span class="date">2014-2015</span>
                 <h2>Master Degree of Design</h2>
                 <span class="university">Cambridge University</span>
@@ -123,7 +132,7 @@
             </div>
         </div>
         <div class="thirdSectionThirdSection">
-            <div class="righht">
+            <div class="left">
                 <span class="date">2014-2015</span>
                 <h2>Master Degree of Design</h2>
                 <span class="university">Cambridge University</span>
@@ -131,7 +140,7 @@
                     regelialia. It is a paradisematic country, in which roasted parts of sentences is in our
                     mouth.</span>
             </div>
-            <div class="lefft">
+            <div class="left">
                 <span class="date">2014-2015</span>
                 <h2>Master Degree of Design</h2>
                 <span class="university">Cambridge University</span>
@@ -215,7 +224,7 @@
             </div>
         </div>
     </div>
-    <div class="projects" id="projects">
+    <div class="projects" id="myBlog">
         <div class="sixthSection">
             <div class="sixthTitle">
                 <p>Our Projects</p>
@@ -299,7 +308,7 @@
             </div>
         </div>
     </div>
-    <div class="blogs" id="myblog">
+    <div class="blogs" id="contact">
         <div class="seventhSection">
             <div class="seventhTitle">
                 Our Blog
@@ -309,16 +318,45 @@
             </div>
             <div class="pictures">
                 <li>
-                    <a class="petra" href="/hello.html"><img src="/petra.png" alt=""></a>
+                    <a class="petra" href="/hello.html"><img src="/img/petra.png" alt=""></a>
                 </li>
                 <li>
-                    <a class="isreal" href="/beautifulisreal.jpeg"><img src="/isreal.jpeg" alt=""></a>
+                    <a class="isreal" href="/beautifulisreal.jpeg"><img src="/img/isreal.jpeg" alt=""></a>
                 </li>
                 <li>
-                    <a class="paris" href="/paris.jpeg"><img src="/paris.png" alt=""></a>
+                    <a class="paris" href="/paris.jpeg"><img src="img/paris.png" alt=""></a>
                 </li>
             </div>
+            <div class="etc">
+                <div class="award">
+                    <h3 class="one">100</h3>
+                    <p>Awards</p>
+                </div>
+                <div class="project">
+                    <h3 class="thousand">1,200</h3>
+                    <p>Complete Projects</p>
+                </div>
+                <div class="satisfied">
+                    <h3 class="two">1,200</h3>
+                    <p>Happy Customer</p>
+                </div>
+                <div class="coffee">
+                    <h3 class="hundred">500</h3>
+                    <p>Cups of Coffee</p>
+                </div>
+            </div>
+            <div class="beautiful">
+                <div class="landscape">
+                    <img class="night" src="img/" alt="">
+                    <p class="wordss">I'm <span class="colored-text">Availble</span> For Freelancing</p>
+                    <p class="woord">A small river named Duden flows by their place and supplies it with the necessary
+                        regelialia.</p>
+                    <p><button class="hire-me">Hire Me</button></p>
+                </div>
+            </div>
         </div>
+    </div>
+    </div>
     </div>
 </body>
 
