@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <script src="/script.js"  async defer></script>
+    <script src="/script.js" async defer></script>
     <title>How to make a Website</title>
 </head>
 
@@ -14,8 +14,8 @@
         <div class="logo">
             <h2>Clark</h2>
         </div>
-        <nav>
-            <ul>
+        <nav class="navbar">
+            <ul class="nav-links" id="nav-links">
                 <li>
                     <p class="javascriptButtons" onclick="scrollingToAboutSection('home')">Home</p>
                 </li>
@@ -38,6 +38,11 @@
                     <p class="javascriptButtons" onclick="scrollingToAboutSection('contact')">Contact</p>
                 </li>
             </ul>
+            <div class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
         </nav>
     </header>
     <div class="first-part">
@@ -51,8 +56,6 @@
                 </p>
                 <div class="name" style="opacity: 1;">
                     UI & UX Specialist
-                    Project Leader
-                    Designer & Developer
                 </div>
                 <div class="loremIpsum">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos est ad labore et
                     itaque, autem mollitia ullam ut exercitationem voluptate tempora sequi accusamus pariatur hic dolor
@@ -69,8 +72,10 @@
         </div>
     </div>
 
+    <button></button>
+
     <div class="secondSection" id="about">
-            <!-- <div class="rightSecondSection">
+        <!-- <div class="rightSecondSection">
                 <div class="title">
                     <p>What I Do</p>
                 </div>
@@ -92,25 +97,22 @@
             <h2>Resume</h2>
         </div>
         <div class="description">
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                paradisematic country, in which roasted words of sentences is in our mouth.</p>
+            <p>A small river named Duden flows by their place and supplies it with the necessary
+                regelialia. It is a paradisematic country, in which roasted parts of sentences is in our
+                mouth.</p>
         </div>
         <div class="firstSectionThirdSection">
             <div class="left">
                 <span class="date">2014-2015</span>
                 <h2 class="degree">Master Degree of Design</h2>
                 <span class="university">Cambridge University</span>
-                <span class="words">A small river named Duden flows by their place and supplies it with the necessary
-                    regelialia. It is a paradisematic country, in which roasted parts of sentences is in our
-                    mouth.</span>
+                <span class="words">A small river named Duden flows by their place and supplies it with the necessary tools for Africa</span>
             </div>
             <div class="left">
                 <span class="date">2014-2015</span>
                 <h2 class="degree">Master Degree of Design</h2>
                 <span class="university">Cambridge University</span>
-                <span class="words">A small river named Duden flows by their place and supplies it with the necessary
-                    regelialia. It is a paradisematic country, in which roasted parts of sentences is in our
-                    mouth.</span>
+                <span class="words">A small river named Duden flows by their place and supplies it with the necessary tools for Africa</span>
             </div>
         </div>
         <div class="secondSectionThirdSection">
@@ -119,7 +121,7 @@
                 <h2>Master Degree of Design</h2>
                 <span class="university">Cambridge University</span>
                 <span class="words">A small river named Duden flows by their place and supplies it with the necessary
-                    regelialia. It is a paradisematic country, in which roasted parts of sentences is in our
+                    regelialia. It is a paradisematic country, in which roasted parts of sentences is in our.
                     mouth.</span>
             </div>
             <div class="left">
@@ -127,7 +129,7 @@
                 <h2>Master Degree of Design</h2>
                 <span class="university">Cambridge University</span>
                 <span class="words">A small river named Duden flows by their place and supplies it with the necessary
-                    regelialia. It is a paradisematic country, in which roasted parts of sentences is in our
+                    regelialia. It is a paradisematic country, in which roasted parts of sentences is in our.
                     mouth.</span>
             </div>
         </div>
@@ -246,17 +248,17 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="/hove1.html">
-                            <div class="gallery">
-                                <div class="image-section">
-                                    <img src="https://picsum.photos/201" alt="">
-                                </div>
-                                <div class="caption">
-                                    <h2>Hover Two</h2>
-                                    <p>Web Design</p>
-                                </div>
+
+                        <div onclick="goToAnotherPage('/othersPage/helloTest.html')" class="gallery">
+                            <div class="image-section">
+                                <img src="https://picsum.photos/201" alt="">
                             </div>
-                        </a>
+                            <div class="caption">
+                                <h2>Hover Two</h2>
+                                <p>Web Design</p>
+                            </div>
+                        </div>
+
                         <a href="/hove1.html">
                             <div class="gallery">
                                 <div class="image-section">
@@ -318,13 +320,13 @@
             </div>
             <div class="pictures">
                 <li>
-                    <a class="petra" href="/hello.html"><img src="/img/petra.png" alt=""></a>
+                    <a class="petra" href="/othersPage/hello.html"><img src="/img/petra.png" alt=""></a>
                 </li>
                 <li>
-                    <a class="isreal" href="/beautifulisreal.jpeg"><img src="/img/isreal.jpeg" alt=""></a>
+                    <a class="isreal" href="/othersPage/isreal.html"><img src="/img/israel.png" alt=""></a>
                 </li>
                 <li>
-                    <a class="paris" href="/paris.jpeg"><img src="img/paris.png" alt=""></a>
+                    <a class="paris" href="othersPage/paris.html"><img src="img/paris9.png" alt=""></a>
                 </li>
             </div>
             <div class="etc">
@@ -343,15 +345,6 @@
                 <div class="coffee">
                     <h3 class="hundred">500</h3>
                     <p>Cups of Coffee</p>
-                </div>
-            </div>
-            <div class="beautiful">
-                <div class="landscape">
-                    <img class="night" src="img/" alt="">
-                    <p class="wordss">I'm <span class="colored-text">Availble</span> For Freelancing</p>
-                    <p class="woord">A small river named Duden flows by their place and supplies it with the necessary
-                        regelialia.</p>
-                    <p><button class="hire-me">Hire Me</button></p>
                 </div>
             </div>
         </div>
