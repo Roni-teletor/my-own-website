@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'poppins', sans-serif;
 }
 
 header {
@@ -15,12 +15,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
     opacity: 86%;
+    z-index: 50;
     position: sticky;
+    background-color: #7c9ed9;
     top: 0;
-    background-color: #3498db;
-    color: white;
   transition: background-color 0.3s ease;
     
 }
@@ -40,11 +39,10 @@ header {
 }
 
 .logo {
-    font-size: 20px;
-    font-weight: bolder;
-    color: black;
+    list-style-type: none;  
+    font-size: 30px;
+    color: #F2EDD7;
     text-transform: capitalizes;
-    letter-spacing: 1.5px;
     cursor: pointer;
 }
 
@@ -63,6 +61,10 @@ a,button {
     text-decoration: none;
 }
 
+a,button:hover {
+    color: black;
+}
+
 nav li a:hover {
     color: #125, 209, 129;
     transition: all 0.4s ease 0s;
@@ -71,9 +73,8 @@ nav li a:hover {
 .first-part {
     height: 90vh;
     width: 100%;
-    border-radius: 20px;
     display: flex;
-    background-color: #D3D3D3;
+    background-color: #8AAAE5;
    
 }
 .left-first-part {
@@ -104,7 +105,7 @@ nav li a:hover {
 .hi {
     height: 5vh;
     width: 100%;
-    color: black;
+    color: #F2EDD7;
     font-size: 16px;
     display: flex;
     justify-content: center;
@@ -116,9 +117,9 @@ nav li a:hover {
     font-size: 20px;
     display: flex;
     justify-content: center;
-    border: 2px solid #D43F52;
+    border: 2px solid #FEFEFE;
     padding: 25px 35px;
-    color: #D43F52;
+    color: #FEFEFE;
 }
 
 @keyframes fade-inout{
@@ -133,6 +134,7 @@ nav li a:hover {
     justify-content: center;
     width: 100%;
     bottom: 50%;
+    color: #FEFEFE;
 }
 
 .loremIpsum {
@@ -141,7 +143,8 @@ nav li a:hover {
     height: 15vh;
     font-weight: lighter;
     display: flex;
-    width: 90%;
+    width: 90%v;
+    color: #FEFEFE;
 }
 
 .profesion {
@@ -176,8 +179,7 @@ height: 10vh;
 
 }
 
-.work:hover{
-    background-color: #D43F52; /* New background color for hover */
+.work:hover{/* New background color for hover */
   box-shadow: 0 30px 40px rgba(0, 0, 0, 0.2);
   transition: all .4s ease;
 }
@@ -193,15 +195,16 @@ height: 10vh;
     width: 100%;
     display: flex;
     cursor: pointer;
+    background-color: #8AAAE5;
 }
 
 .javascriptButtons{
-    color: black;
+    color: #F2EDD7;
     
 }
 
 .javascriptButtons:hover{
-    color: #6A2E35;
+    color: black;
     cursor: pointer;
 }
 
@@ -236,22 +239,23 @@ height: 10vh;
 } */
 
 
-.div-insideJavascript {
-    display: flex;
-    text-align: center;
+.div-insideJavascript { 
     width: 100%;
+    display: flex;
     font-size: 16px;
     flex-wrap: wrap;
     justify-content: center;
+    color: #FEFEFE;
     
 }
+
 .showMoreButton {
     color: black;
     border-radius: 30px;
 }
 
 .showMoreButton:hover {
-    background-color: #6A2E35;
+    background-color: #8AAAE5;
     border-radius: 25px;
     transition: all .5s ease;
 
@@ -259,10 +263,13 @@ height: 10vh;
 
 .divForTAndS {
     display: flex;
-    width: 100%;
-    height: 13vh;
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FEFEFE;
     flex-direction: column;
-    
 }
 
 .div2-insideJavascript{
@@ -309,33 +316,32 @@ ul {
     height: 150vh;
     width: 100vw;
     flex-wrap: wrap;
-    margin-top: 80px;
     display: flex;
+    background-color: #8AAAE5;
 }
 
 .firstSectionThirdSection {
     height: 30%;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     
 }
 
 
 .left {
-
     width: 40%;
     display: flex;
     flex-wrap: wrap;
     color: white;
-    background-image: linear-gradient(to bottom, #3498db, #2980b9);
-    transition: background-image 0.3s ease;
     border-radius: 20px;
-    
 }
+
 .left:hover {
-    background-image: linear-gradient(to bottom, #e74c3c, #3498db);
+    background-color: white;
+    color: black;
 }
+
 
 .right {
     color: white;
@@ -367,6 +373,7 @@ ul {
    font-size: 50px;
     display: flex;
     justify-content: center;
+    color: #FEFEFE;
 } 
 
 .description {
@@ -375,6 +382,7 @@ ul {
     display: flex;
     justify-content: center;
     height: 3vh;
+    color: #FEFEFE;
 
 }
 
@@ -389,10 +397,8 @@ ul {
 
 .university {
     height: 10%;
-    width: 150px;
     font-size: 12px;
     display: flex;
-    justify-content: center;
 }
 
 .words {
@@ -403,10 +409,10 @@ ul {
 }
 
 .fourthSection {
-    height: 150VH;
-    width: 100VW;
+    height: 100vh;
+    width: 100vw;
     flex-wrap: wrap;
-    padding: 100px;
+    background-color: #8AAAE5;
     
 }
 
@@ -417,7 +423,7 @@ ul {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    color: black;
+    color: #FEFEFE;
 }
 
 .word {
@@ -425,7 +431,7 @@ ul {
     width: 100%;
     display: flex;
     justify-content: center;
-    color: black;
+    color: #FEFEFE;
 }
 .service1 {
     width: 100%;
@@ -438,7 +444,6 @@ ul {
 .webDesign {
     width: 30%;
     height: 40%;
-    background-color: #2E3837;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -446,33 +451,33 @@ ul {
 }
 
 .webDesign:hover {
-    background-color: #3498db;
+    background-color: white;
 }
 
 .photography:hover {
-    background-color: #3498db;
+    background-color: white;
 }
 
 .webDeveloper:hover {
-    background-color: #3498db;
+    background-color: white;
 }
 
 .appDeveloping:hover {
-    background-color: #3498db;
+    background-color: white;
 }
 
 .branding:hover {
-    background-color: #3498db;
+    background-color: white;
 }
 
 .productStrategy:hover {
-    background-color: #3498db;
+    background-color: white;
 }
 
 .photography {
     width: 30%;
     height: 40%;
-    background-color: #2E3837;
+    background-color: #8AAAE5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -482,7 +487,7 @@ ul {
 .webDeveloper {
     width: 30%;
     height: 40%;
-    background-color: #2E3837;
+    background-color: #8AAAE5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -492,13 +497,13 @@ ul {
 .web {
     width: 30%;
     height: 40%;
-    background-color: #2E3837;
+    background-color: #8AAAE5;
 }
 
 .appDeveloping {
     width: 30%;
     height: 40%;
-    background-color: #2E3837;
+    background-color: #8AAAE5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -508,7 +513,7 @@ ul {
 .branding {
     width: 30%;
     height: 40%;
-    background-color: #2E3837;
+    background-color: #8AAAE5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -518,7 +523,7 @@ ul {
 .productStrategy {
     width: 30%;
     height: 40%;
-    background-color: #2E3837;
+    background-color: #8AAAE5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -526,12 +531,13 @@ ul {
 }
 
 .skill {
-    height: 100vh;
+    height: 130vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: #8AAAE5;
 }
 
 .tiitle {
@@ -692,6 +698,7 @@ ul {
     padding-left: 30px;
     flex-wrap: wrap;
     display: flex;
+    background-color: #8AAAE5;
 }
 
 .sixthSection {
@@ -754,7 +761,7 @@ ul {
 
 .wrapper .container .hero-section .gallery .image-section img{
     width: 100%;
-    height: auto;
+    height: auto;         
     border: 1px solid #eee;
     padding: 5px;
     display: block;
@@ -782,8 +789,9 @@ ul {
 }
 
 .blogs {
-    height: 200vh;
+    height: 125vh;
     width: 100%;
+    background-color: #8AAAE5;
 }
 
 .seventhTitle {
@@ -965,16 +973,13 @@ img:hover {
     .thirdSection {
         height: 80vh;
     }
-
-    .firstSectionThirdSection:hover {
-        background-color: red;
-    }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
     header {
         width: 100vw;
         border-radius: 10px;
+        z-index: 50;
     }
 
     .javascriptButtons {
@@ -1002,14 +1007,62 @@ img:hover {
 
     .fourthSection {
         flex-direction: column;
-        align-items: center; 
+        display: flex;
+        justify-content: center; 
+        flex-wrap: wrap;
         padding: 0;
-        height: 150vh;
+        height: 100vh;
+        line-height: 1;
     }
 
-    .webDesign, .photography, .webDeveloper,
-    .web, .appDeveloping, .branding, .productStrategy{
-        width: 90%;
+    .service1 {
+        width: 100%;
+        height: 85vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .webDesign {
+        width: 80%;
+        height: 13vh;
+        line-height: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .photography {
+        width: 80%;
+        height: 13vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .webDeveloper {
+        width: 80%;
+        height: 13vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .appDeveloping {
+        width: 80%;
+        height: 13vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .branding {
+        width: 80%;
+        height: 13vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .productStrategy {
+        width: 80%;
+        height: 13vh;
+        display: flex;
+        justify-content: center;
     }
 
     .word {
@@ -1021,7 +1074,6 @@ img:hover {
 
     .skill {
         height: 150vh;
-        transform: translateY(20%);
     }
 
     .skills {
@@ -1035,7 +1087,6 @@ img:hover {
     }
 
     .projects {
-        transform: translateY(25%);
         height: 124vh;
         width: 100%;
     }
@@ -1063,8 +1114,7 @@ img:hover {
     }
 
     .blogs {
-        transform: translateY(30%);
-        height: 140vh;
+        height: 125vh;
     }
 
     .pictures {
@@ -1081,7 +1131,6 @@ img:hover {
     }
 
     .hamburger {
-        display: none;
         flex-direction: column;
         cursor: pointer;
         display: block;
@@ -1129,26 +1178,31 @@ img:hover {
             display: flex;
         }
     
-        .nav-links {
-            width: 100%;
+        .nav-links { 
             display: none;
+            width: 27%;
             flex-direction: column;
             background-color: #333;
             position: absolute;
-            border-radius: 10px;
+            border-radius: 15px;
+            align-items: flex-end;
             top: 75px;
-            left: 50%;
-            width: 100%;
-            transform: translateX(70%); 
+            left: 30%;
+            transform: translateX(157%); 
         }
     
         .nav-links.active {
             display: flex;
-            width: 30%;
+            width: 27%;
+            align-items: flex-start;
         }
     
         .nav-links li {
             margin-bottom: 10px;
+            display: flex;
+            justify-content: flex-end;
         }
+
+
 
 }
